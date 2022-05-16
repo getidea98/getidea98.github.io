@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>HashMap | getidea98</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    
+    <meta name="description" content="个人博客">
+    
+    <link rel="preload" href="/assets/css/0.styles.7f84f354.css" as="style"><link rel="preload" href="/assets/js/app.10cb8224.js" as="script"><link rel="preload" href="/assets/js/2.74aa129f.js" as="script"><link rel="preload" href="/assets/js/13.9bf75953.js" as="script"><link rel="prefetch" href="/assets/js/10.dadb40c9.js"><link rel="prefetch" href="/assets/js/11.cf4190a3.js"><link rel="prefetch" href="/assets/js/12.0824368c.js"><link rel="prefetch" href="/assets/js/14.94f39f3c.js"><link rel="prefetch" href="/assets/js/15.66b03d5f.js"><link rel="prefetch" href="/assets/js/16.bf2ec8b1.js"><link rel="prefetch" href="/assets/js/17.185e3bce.js"><link rel="prefetch" href="/assets/js/18.8e115374.js"><link rel="prefetch" href="/assets/js/19.0f1a594a.js"><link rel="prefetch" href="/assets/js/20.b52cba55.js"><link rel="prefetch" href="/assets/js/21.a70fb2fa.js"><link rel="prefetch" href="/assets/js/22.c9eade7d.js"><link rel="prefetch" href="/assets/js/23.27964abf.js"><link rel="prefetch" href="/assets/js/24.7e7113f1.js"><link rel="prefetch" href="/assets/js/25.76d5253a.js"><link rel="prefetch" href="/assets/js/26.a22db28f.js"><link rel="prefetch" href="/assets/js/27.be3b5979.js"><link rel="prefetch" href="/assets/js/28.ccb2467c.js"><link rel="prefetch" href="/assets/js/29.c2c97391.js"><link rel="prefetch" href="/assets/js/3.ed25f37c.js"><link rel="prefetch" href="/assets/js/30.dd5a03c2.js"><link rel="prefetch" href="/assets/js/31.2a1a51a4.js"><link rel="prefetch" href="/assets/js/32.77b782f6.js"><link rel="prefetch" href="/assets/js/33.d09b68b5.js"><link rel="prefetch" href="/assets/js/34.93280e54.js"><link rel="prefetch" href="/assets/js/4.f154c237.js"><link rel="prefetch" href="/assets/js/5.9824d715.js"><link rel="prefetch" href="/assets/js/6.3205172c.js"><link rel="prefetch" href="/assets/js/7.a0f0b63a.js"><link rel="prefetch" href="/assets/js/8.173a1f72.js"><link rel="prefetch" href="/assets/js/9.d82ab73f.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.7f84f354.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="https://cn.vuejs.org/images/logo.svg" alt="getidea98" class="logo"> <span class="site-name can-hide">getidea98</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/computerLearningNotes/Java/ArrayList/" class="nav-link">
+  Java
+</a></div><div class="nav-item"><a href="/DesignPattern.html" class="nav-link">
+  设计模式
+</a></div><div class="nav-item"><a href="/computerBase/Linux.html" class="nav-link">
+  计算机基础
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Language Menu" class="dropdown-title"><span class="title">读书笔记</span> <span class="arrow down"></span></button> <button type="button" aria-label="Language Menu" class="mobile-dropdown-title"><span class="title">读书笔记</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/studyBook/TheArtOfJavaConcurrentProgramming/" class="nav-link">
+  Java并发编程的艺术
+</a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/computerLearningNotes/Java/ArrayList/" class="nav-link">
+  Java
+</a></div><div class="nav-item"><a href="/DesignPattern.html" class="nav-link">
+  设计模式
+</a></div><div class="nav-item"><a href="/computerBase/Linux.html" class="nav-link">
+  计算机基础
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Language Menu" class="dropdown-title"><span class="title">读书笔记</span> <span class="arrow down"></span></button> <button type="button" aria-label="Language Menu" class="mobile-dropdown-title"><span class="title">读书笔记</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/studyBook/TheArtOfJavaConcurrentProgramming/" class="nav-link">
+  Java并发编程的艺术
+</a></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>Java</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/computerLearningNotes/Java/ArrayList.html" class="sidebar-link">ArrayList</a></li><li><a href="/computerLearningNotes/Java/HashMap.html" aria-current="page" class="active sidebar-link">HashMap</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/computerLearningNotes/Java/HashMap.html#concurrenthashmap" class="sidebar-link">ConcurrentHashMap</a></li></ul></li><li><a href="/computerLearningNotes/Java/Java动态代理.html" class="sidebar-link">动态代理</a></li><li><a href="/computerLearningNotes/Java/Java反射与注解.html" class="sidebar-link">Java反射与注解</a></li><li><a href="/computerLearningNotes/Java/Java锁.html" class="sidebar-link">Java锁</a></li><li><a href="/computerLearningNotes/Java/Thread多线程.html" class="sidebar-link">Thread多线程</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="hashmap"><a href="#hashmap" class="header-anchor">#</a> HashMap</h1> <p>tag: Java基础</p> <p>特点：</p> <ul><li>非线程安全</li> <li>底层是数组➕链表、数组➕红黑树</li> <li>扩容存在数组扩容、链表树化</li></ul> <ol><li><p>构造方法有三个</p> <ol><li><p>HashMap()：提供默认的扩容因子（0.75)</p> <div class="language-java extra-class"><pre class="language-java"><code><span class="token keyword">public</span> <span class="token class-name">HashMap</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>loadFactor <span class="token operator">=</span> DEFAULT_LOAD_FACTOR<span class="token punctuation">;</span> <span class="token comment">// all other fields defaulted</span>
+    <span class="token punctuation">}</span>
+</code></pre></div></li> <li><p>HashMap(int initialCapacity): initialCapacity 作为默认的数组大小。详细看构造方法3</p> <div class="language-java extra-class"><pre class="language-java"><code><span class="token keyword">public</span> <span class="token class-name">HashMap</span><span class="token punctuation">(</span><span class="token keyword">int</span> initialCapacity<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">this</span><span class="token punctuation">(</span>initialCapacity<span class="token punctuation">,</span> DEFAULT_LOAD_FACTOR<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+</code></pre></div></li> <li><p>HashMap(int initialCapacity, float loadFactor): 与2相比，提供的更为全面。并且是2的底层。</p> <p>initialCapacity:</p> <p>参数范围是 0&lt;initialCapacity≤MAXIMUM_CAPACITY。</p> <p>方法tableSizeFor，目的是寻找不大于给定参数（initialCapacity）最小的2的幂。</p> <p>initialCapacity = 15 - threshold = 16</p> <p>initialCapacity = 32 - threshold = 32</p> <div class="language-java extra-class"><pre class="language-java"><code><span class="token keyword">public</span> <span class="token class-name">HashMap</span><span class="token punctuation">(</span><span class="token keyword">int</span> initialCapacity<span class="token punctuation">,</span> <span class="token keyword">float</span> loadFactor<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span>initialCapacity <span class="token operator">&lt;</span> <span class="token number">0</span><span class="token punctuation">)</span>
+            <span class="token keyword">throw</span> <span class="token keyword">new</span> <span class="token class-name">IllegalArgumentException</span><span class="token punctuation">(</span><span class="token string">&quot;Illegal initial capacity: &quot;</span> <span class="token operator">+</span>
+                                               initialCapacity<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span>initialCapacity <span class="token operator">&gt;</span> MAXIMUM_CAPACITY<span class="token punctuation">)</span>
+            initialCapacity <span class="token operator">=</span> MAXIMUM_CAPACITY<span class="token punctuation">;</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span>loadFactor <span class="token operator">&lt;=</span> <span class="token number">0</span> <span class="token operator">||</span> <span class="token class-name">Float</span><span class="token punctuation">.</span><span class="token function">isNaN</span><span class="token punctuation">(</span>loadFactor<span class="token punctuation">)</span><span class="token punctuation">)</span>
+            <span class="token keyword">throw</span> <span class="token keyword">new</span> <span class="token class-name">IllegalArgumentException</span><span class="token punctuation">(</span><span class="token string">&quot;Illegal load factor: &quot;</span> <span class="token operator">+</span>
+                                               loadFactor<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>loadFactor <span class="token operator">=</span> loadFactor<span class="token punctuation">;</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>threshold <span class="token operator">=</span> <span class="token function">tableSizeFor</span><span class="token punctuation">(</span>initialCapacity<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+</code></pre></div></li></ol></li> <li><p>当链表长度到达8，数组长度到达64时，链表才会转换成红黑树。否则优先扩容。</p></li> <li><p>当链表的长度到6，这个链表由红黑树变成链表。</p></li> <li><p>数组长度是2的幂，为了更高效率的计算下表。</p></li></ol> <h2 id="concurrenthashmap"><a href="#concurrenthashmap" class="header-anchor">#</a> ConcurrentHashMap</h2> <ol><li><p>key和value是不支持null，为什么？</p> <p>关键点：这是一个支持多线程的Map。</p> <p>假如支持的话，如果map.get(key)返回一个null。我们没办法判断这个key和 value（null）有没有映射关系。因为，没有映射关系返回null，有映射关系返回了value（null）。</p> <p>同样的问题在Hashmap中可以通过，map.<code>containsKey(key)</code>来进一步判断是否有过这个key的映射。</p> <p>但是因为这个map是支持多线程的，就导致在map上的验证方法，没办法放在ConcurrentHashMap上面。</p></li></ol></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/computerLearningNotes/Java/ArrayList.html" class="prev">
+        ArrayList
+      </a></span> <span class="next"><a href="/computerLearningNotes/Java/Java动态代理.html">
+        动态代理
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"><!----></div></div>
+    <script src="/assets/js/app.10cb8224.js" defer></script><script src="/assets/js/2.74aa129f.js" defer></script><script src="/assets/js/13.9bf75953.js" defer></script>
+  </body>
+</html>

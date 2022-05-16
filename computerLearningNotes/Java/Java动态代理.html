@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>动态代理 | getidea98</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    
+    <meta name="description" content="个人博客">
+    
+    <link rel="preload" href="/assets/css/0.styles.7f84f354.css" as="style"><link rel="preload" href="/assets/js/app.10cb8224.js" as="script"><link rel="preload" href="/assets/js/2.74aa129f.js" as="script"><link rel="preload" href="/assets/js/14.94f39f3c.js" as="script"><link rel="prefetch" href="/assets/js/10.dadb40c9.js"><link rel="prefetch" href="/assets/js/11.cf4190a3.js"><link rel="prefetch" href="/assets/js/12.0824368c.js"><link rel="prefetch" href="/assets/js/13.9bf75953.js"><link rel="prefetch" href="/assets/js/15.66b03d5f.js"><link rel="prefetch" href="/assets/js/16.bf2ec8b1.js"><link rel="prefetch" href="/assets/js/17.185e3bce.js"><link rel="prefetch" href="/assets/js/18.8e115374.js"><link rel="prefetch" href="/assets/js/19.0f1a594a.js"><link rel="prefetch" href="/assets/js/20.b52cba55.js"><link rel="prefetch" href="/assets/js/21.a70fb2fa.js"><link rel="prefetch" href="/assets/js/22.c9eade7d.js"><link rel="prefetch" href="/assets/js/23.27964abf.js"><link rel="prefetch" href="/assets/js/24.7e7113f1.js"><link rel="prefetch" href="/assets/js/25.76d5253a.js"><link rel="prefetch" href="/assets/js/26.a22db28f.js"><link rel="prefetch" href="/assets/js/27.be3b5979.js"><link rel="prefetch" href="/assets/js/28.ccb2467c.js"><link rel="prefetch" href="/assets/js/29.c2c97391.js"><link rel="prefetch" href="/assets/js/3.ed25f37c.js"><link rel="prefetch" href="/assets/js/30.dd5a03c2.js"><link rel="prefetch" href="/assets/js/31.2a1a51a4.js"><link rel="prefetch" href="/assets/js/32.77b782f6.js"><link rel="prefetch" href="/assets/js/33.d09b68b5.js"><link rel="prefetch" href="/assets/js/34.93280e54.js"><link rel="prefetch" href="/assets/js/4.f154c237.js"><link rel="prefetch" href="/assets/js/5.9824d715.js"><link rel="prefetch" href="/assets/js/6.3205172c.js"><link rel="prefetch" href="/assets/js/7.a0f0b63a.js"><link rel="prefetch" href="/assets/js/8.173a1f72.js"><link rel="prefetch" href="/assets/js/9.d82ab73f.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.7f84f354.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="https://cn.vuejs.org/images/logo.svg" alt="getidea98" class="logo"> <span class="site-name can-hide">getidea98</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/computerLearningNotes/Java/ArrayList/" class="nav-link">
+  Java
+</a></div><div class="nav-item"><a href="/DesignPattern.html" class="nav-link">
+  设计模式
+</a></div><div class="nav-item"><a href="/computerBase/Linux.html" class="nav-link">
+  计算机基础
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Language Menu" class="dropdown-title"><span class="title">读书笔记</span> <span class="arrow down"></span></button> <button type="button" aria-label="Language Menu" class="mobile-dropdown-title"><span class="title">读书笔记</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/studyBook/TheArtOfJavaConcurrentProgramming/" class="nav-link">
+  Java并发编程的艺术
+</a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/computerLearningNotes/Java/ArrayList/" class="nav-link">
+  Java
+</a></div><div class="nav-item"><a href="/DesignPattern.html" class="nav-link">
+  设计模式
+</a></div><div class="nav-item"><a href="/computerBase/Linux.html" class="nav-link">
+  计算机基础
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Language Menu" class="dropdown-title"><span class="title">读书笔记</span> <span class="arrow down"></span></button> <button type="button" aria-label="Language Menu" class="mobile-dropdown-title"><span class="title">读书笔记</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/studyBook/TheArtOfJavaConcurrentProgramming/" class="nav-link">
+  Java并发编程的艺术
+</a></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>Java</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/computerLearningNotes/Java/ArrayList.html" class="sidebar-link">ArrayList</a></li><li><a href="/computerLearningNotes/Java/HashMap.html" class="sidebar-link">HashMap</a></li><li><a href="/computerLearningNotes/Java/Java动态代理.html" class="active sidebar-link">动态代理</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/computerLearningNotes/Java/Java动态代理.html#jdk-动态代理" class="sidebar-link">jdk 动态代理</a></li><li class="sidebar-sub-header"><a href="/computerLearningNotes/Java/Java动态代理.html#gclib动态代理" class="sidebar-link">gclib动态代理</a></li></ul></li><li><a href="/computerLearningNotes/Java/Java反射与注解.html" class="sidebar-link">Java反射与注解</a></li><li><a href="/computerLearningNotes/Java/Java锁.html" class="sidebar-link">Java锁</a></li><li><a href="/computerLearningNotes/Java/Thread多线程.html" class="sidebar-link">Thread多线程</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="动态代理"><a href="#动态代理" class="header-anchor">#</a> 动态代理</h1> <p>tag: Java基础</p> <h2 id="jdk-动态代理"><a href="#jdk-动态代理" class="header-anchor">#</a> jdk 动态代理</h2> <p>jdk动态代理的步骤</p> <ol><li>通过实现 InvocationHandler 接口创建自己的调用处理器；</li> <li>通过为 Proxy 类指定 ClassLoader 对象和一组 interface 来创建动态代理类；</li> <li>通过反射机制获得动态代理类的构造函数，其唯一参数类型是调用处理器接口类型；</li> <li>通过构造函数创建动态代理类实例，构造时调用处理器对象作为参数被传入。</li></ol> <h2 id="gclib动态代理"><a href="#gclib动态代理" class="header-anchor">#</a> gclib动态代理</h2> <ol><li>调用代理类方法。</li> <li>代理类方法中触发拦截器方法。</li> <li>拦截器中触发MethodProxy.invokeSuper方法，并获取需要调用的代理类方法索引。</li> <li>执行Fast索引类方法，根据代理类方法索引，获得代理类方法。</li> <li>执行代理类中代理方法，通过super()方法完成真实逻辑调用。</li></ol> <p><a href="https://my.oschina.net/itblog/blog/4715745" target="_blank" rel="noopener noreferrer">https://my.oschina.net/itblog/blog/4715745<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/computerLearningNotes/Java/HashMap.html" class="prev">
+        HashMap
+      </a></span> <span class="next"><a href="/computerLearningNotes/Java/Java反射与注解.html">
+        Java反射与注解
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"><!----></div></div>
+    <script src="/assets/js/app.10cb8224.js" defer></script><script src="/assets/js/2.74aa129f.js" defer></script><script src="/assets/js/14.94f39f3c.js" defer></script>
+  </body>
+</html>
